@@ -1,1 +1,2 @@
-import './render/telegram'
+import './render/telegram';
+
