@@ -50,12 +50,12 @@ function TodoList() {
     });
 
     if (todos.length === 0) {
-        return <Text>Todo list is empty</Text>;
+        return <Text>Your todo list is empty</Text>;
     }
 
     const title = todos.map((todo) => (
         <>
-            {todo.isCompleted ? <s>{todo.text}</s> : todo.text}
+            • {todo.isCompleted ? <s>{todo.text}</s> : todo.text}
             <br />
         </>
     ));
@@ -69,7 +69,7 @@ function TodoList() {
     return (
         <ButtonGroup title={title} maxColumns={3}>
             <Button key={mode} onClick={toggleMode}>
-                {mode === DELETE_TODOS_MODE ? 'Delete mode' : 'Complete mode'}
+                {mode === DELETE_TODOS_MODE ? 'Delete mode ❌' : 'Complete mode ✅'}
             </Button>
             {todosButtons}
         </ButtonGroup>
