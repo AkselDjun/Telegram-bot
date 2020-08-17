@@ -8,9 +8,6 @@
     },
     "license": "MIT",
     "main": "dist/index.js",
-    "engines": {
-        "node": "12.18.0"
-    },
     "files": [
         "dist/**/*"
     ],
