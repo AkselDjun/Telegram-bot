@@ -8,6 +8,9 @@
     },
     "license": "MIT",
     "main": "dist/index.js",
+    "engines": {
+        "node": "12.18.0"
+    },
     "files": [
         "dist/**/*"
     ],
@@ -21,6 +24,7 @@
         "test": "jest"
     },
     "dependencies": {
+        "-": "0.0.1",
         "@babel/core": "^7.10.2",
         "@babel/preset-env": "^7.10.2",
         "@babel/preset-react": "^7.10.1",
@@ -29,9 +33,13 @@
         "@urban-bot/slack": "0.1.2",
         "@urban-bot/telegram": "0.1.2",
         "babel-loader": "^8.1.0",
+        "cors": "^2.8.5",
         "dotenv": "^8.2.0",
+        "express": "^4.17.1",
         "file-loader": "^6.0.0",
+        "heroku": "^7.42.6",
         "react": "^16.13.1",
+        "save": "^2.4.0",
         "webpack": "^4.43.0",
         "webpack-cli": "^3.3.11",
         "webpack-node-externals": "^1.7.2"
