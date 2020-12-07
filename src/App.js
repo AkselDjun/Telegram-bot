@@ -79,7 +79,7 @@ function TodoList() {
 export function App() {
     return (
         <>
-            <Text>Welcome to todo list. Type your new todo.</Text>
+            <Text>Welcome to todo list.</Text>
             <TodoList />
         </>
     );
