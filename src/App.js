@@ -71,7 +71,7 @@ function TodoList() {
             <Button key={mode} onClick={toggleMode}>
                 {mode === DELETE_TODOS_MODE ? 'Delete mode 🗑' : 'Complete mode ✅'}
             </Button>
-            {todosButtons}
+            {todosButtons} 
         </ButtonGroup>
     );
 }
